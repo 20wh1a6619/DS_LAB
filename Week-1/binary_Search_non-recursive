@@ -1,0 +1,53 @@
+#include<stdio.h>
+  int binary_search(int n,int a[30],int low,int high,int ele){
+      int mid;
+       mid = (low+high)/2;
+     while(low <= high){
+           if(a[mid] == ele){
+               return mid;
+         }
+            else if(a[mid] < ele){
+                low = mid + 1;
+         }
+           else if(a[mid] > ele){
+                 high = mid - 1;
+         }
+       return -1;
+      }
+      }
+  int main(){
+     int n,a[30],low,high,ele;
+     int i,res;
+     printf("Enter the size of the array");
+     scanf("%d",&n);
+     for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+        }
+     printf("Enter the search element");
+     scanf("%d",&ele);
+     res = binary_search(n,a,0,(n-1),ele);
+     if(res == -1)
+        printf("Element not found");
+ else
+   printf("Element is found at %d position",res+1);
+ }
+ 
+ 
+ /*Output
+ Enter the size of the array5
+1
+2
+3
+4
+5
+Enter the search element3
+Element is found at 3 position
+Enter the size of the array5
+1
+2
+3
+4
+5
+Enter the search element8
+Element not found*/
+  
