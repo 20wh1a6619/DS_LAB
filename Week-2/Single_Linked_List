@@ -246,5 +246,39 @@ Enter your choice8
 45
 89
 63
+ 1-create()
+2-Insert_begin
+3-Insert_end
+4-insert_position
+5-delete_begin
+6-delete_end
+7-delete_pos
+8-display
+9-reverse display
+10-Searching
+11-Sorting
+12-exit
+Enter your choice1
+Enter the no.of nodes3
+45
+89
+63
+1-create()
+2-Insert_begin
+3-Insert_end
+4-insert_position
+5-delete_begin
+6-delete_end
+7-delete_pos
+8-display
+9-reverse display
+10-Searching
+11-Sorting
+12-exit
+Enter your choice8
+45
+89
+63
+
 
 */
