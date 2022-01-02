@@ -131,7 +131,7 @@ Enter your choice
 4-postorder
 5-exit
 2
-19 36 52 56 23 Enter your choice
+23 19 56 52 36 Enter your choice
 1-Create
 2-preorder
 3-inorder
@@ -152,10 +152,11 @@ Enter your choice
 4-postorder
 5-exit
 5
+
+--------------------------------
+Process exited after 80.22 seconds with return value 0
+Press any key to continue . . .
 */
-
-
-
 
 
 
