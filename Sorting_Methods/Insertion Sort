@@ -1,0 +1,45 @@
+#include<stdio.h>
+void InsertionSort(int a[],int n){
+    int i,j,key;
+    for (i = 1; i < n; i++) {
+        key = a[i];
+        j = i-1;
+        while (j >= 0 && a[j] > key) {
+            a[j + 1] = a[j];
+            j = j - 1;
+        }
+        a[j+1] = key;
+    }
+}
+
+int main(){
+	int n,i;
+	printf("Enter the size of the array:\n");
+	scanf("%d",&n);
+	printf("Enter %d elements\n",n);
+	int a[n];
+	for(i = 0;i < n;i++){
+		scanf("%d",&a[i]);
+	}
+	InsertionSort(a,n);
+	printf("Sorted array is : \n");
+	for(i = 0;i < n;i++){
+		printf("%d  ",a[i]);
+	}
+}
+
+/*Output
+Enter the size of the array:
+5
+Enter 5 elements
+12
+85
+63
+27
+2
+Sorted array is :
+2  12  27  63  85
+--------------------------------
+Process exited after 14.67 seconds with return value 5
+Press any key to continue . . .
+*/
