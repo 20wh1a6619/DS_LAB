@@ -1,0 +1,48 @@
+#include<stdio.h>
+void swap(int *a,int *b){
+	int temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+void BubbleSort(int a[],int n){
+	int i,j;
+	for(i = 0;i < n-1;i++){
+		for(j = 0;j < n-i-1;j++){
+			if(a[j] > a[j+1]){
+				swap(&a[j],&a[j+1]);
+			}
+		}
+	}
+}
+int main(){
+	int n,i;
+	printf("Enter the size of the array:\n");
+	scanf("%d",&n);
+	printf("Enter %d elements\n",n);
+	int a[n];
+	for(i = 0;i < n;i++){
+		scanf("%d",&a[i]);
+	}
+	BubbleSort(a,n);
+	printf("Sorted array is : \n");
+	for(i = 0;i < n;i++){
+		printf("%d  ",a[i]);
+	}
+}
+
+/*Output
+Enter the size of the array:
+5
+Enter 5 elements
+56
+45
+12
+32
+8
+Sorted array is :
+8  12  32  45  56
+--------------------------------
+Process exited after 11.6 seconds with return value 5
+Press any key to continue . . .
+*/
